@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #313E50;
+}
+
+.App {
+  text-align: center;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(15,12,1);
+  color: rgb(184, 169, 130);
+}
+
+.jumbotron-image{
+  background: url('./images/backgroundphoto2.png');
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+  font-size: 4rem;
+  color: white;
+  font-family: 'Permanent Marker', cursive;
+  text-shadow: 1px 2px 2px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
