@@ -14,18 +14,18 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: rgb(15,12,1);
-  color: rgb(184, 169, 130);
+  background: #e1dacb;
+  color: #89B9CD;
 }
 
 .jumbotron-image{
-  background: url('./images/backgroundphoto2.png');
+  background: url('./images/backgroundphotoSky.png');
   background-position: center;
   background-size: cover;
-  height: 75vh;
+  height: 90vh;
   font-size: 4rem;
   color: white;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Comic Sans MS', cursive;
   text-shadow: 1px 2px 2px #000;
   display: flex;
   justify-content: center;
