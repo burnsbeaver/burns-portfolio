@@ -4,7 +4,7 @@ class Jumbotron extends Component {
   constructor(){
     super()
     this.state = {
-      words: ''
+      words: []
     }
   }
 
@@ -24,21 +24,27 @@ typeIntro = function (input) {
 }
 
 logLetter = function (letter, time){
-  var string = ""
-  console.log(string)
+  console.log(letter)
+  var newState = {...this.state}
   setTimeout(function(){
-    this.string += letter
-    this.setState= {words: this.string}
+    newState.words.push(letter)
+    this.setState= {newState}
   }, time);
 }
 
+componentDidMount() {
+
+}
+
   render(){
+    var input = this.state.words.join('');
+    this.typeIntro("TESTer")
+    console.log(input)
     return (
       <div className="jumbotron-image">
-        <span>{this.state.words}</span>
+        <span>{input}Burns Beaver, <br/> Full Stack Developer</span>
       </div>
     )
-    this.typeIntro('TEST')
   }
 }
 
